@@ -13,3 +13,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  jwt:
+    secret: "super-tajny-klucz-zmien-na-swoj-i-three-maj-len-64b"
+    accessMinutes: 15
+    refreshDays: 7
+    cors:
+      origins:
+        - "http://localhost:4200"
